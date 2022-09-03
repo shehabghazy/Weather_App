@@ -1,0 +1,141 @@
+/* global style */
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    box-shadow: none !important;
+}
+body {
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 16px;
+}
+.local-color {
+    color : #009ad8
+}
+/* ------------------------------------- */
+
+/* Nav style */
+nav {
+    background-color: #1e202b;
+}
+.logo-caption {
+    font-size: .6rem;
+    padding-top: .2rem;
+}
+.btn-modify {
+    border: .1rem solid transparent;
+    border-radius: 30px;
+    color: white;
+    padding: 1.5px 20px;
+    font-size: .9rem;
+}
+.btn-modify:hover {
+    color: #0dcaf0 ;
+    border: .1rem solid #009ad8;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #009ad8;
+}
+/* -------------------------------- */
+
+/* Header style */
+header {
+    background-image: url('../images/banner.png');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: #1e202b;
+}
+        /* search style */
+.search-container {
+    background-color: #1e202b ;
+    border-radius: 30px;
+}
+.search-container input {
+    width: 95%;
+}
+.search-container button {
+    color: white;
+    background-color: #009ad8;
+    border-radius: 30px;
+    padding: 10px 35px;
+}
+        /* ------ */
+
+        /* weather display style */
+.weather-display {
+    color: #bfc1c8;
+}
+.weather-display h4 {
+    font-size: 0.9rem;
+}
+.weather-display .today {
+    background-color: #323544;
+    padding: 0;
+    border-top-left-radius: 1rem;
+}
+.today-header {
+    border-top-left-radius: 1rem;
+}
+.today-header span {
+    font-size: 0.7rem;
+}
+.today-body span:nth-child(2) {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+}
+.weather-display .tomorrow {
+    background-color: #262936;
+    padding: 0;
+}
+.tomorrow-header {
+    background-color: #1e202b;
+}
+.weather-display .after-tomorrow {
+    background-color: #323544;
+    padding: 0;
+    border-top-right-radius: 1rem;
+}
+.after-tomorrow-header {
+    border-top-right-radius: 1rem;
+}
+.today-header , .after-tomorrow-header {
+    background-color: #2d303d;
+}
+
+/* -------------------------- */
+
+/* Footer style */
+footer {
+    background-color: #323544;
+}
+footer .icons span {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-color: #1e202b ;
+    color: #009ad8;
+    border-radius: 50%;
+    transition: .3s;
+    font-size: x-large;
+    cursor: pointer;
+}
+footer .icons span:hover {
+    background-color: #009ad8 ;
+    color: #fff;
+}
+footer .footer-caption {
+    color : #bfc1c8;
+    font-size: 14px;
+}
+/* ----------------------------------- */

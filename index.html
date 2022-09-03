@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="discription" content="">
+  <meta name="keywords" content="">
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/prject.css">
+</head>
+
+<body>
+
+  <nav class="text-white">
+    <div class="container p-5">
+      <div class="row justify-content-between align-items-center">
+        <div class="logo-container col-2 d-flex justify-content-around align-items-center">
+          <img class="" src="images/logo.png" alt="">
+          <div class="p-0">
+            <h1 class="fs-6 fw-bold p-0 m-0">Weather</h1>
+            <p class="logo-caption m-0">tagline goes here</p>
+          </div>
+        </div>
+        <ul class="text-capitalize list-unstyled col-6 offset-3 d-flex justify-content-around">
+          <li> <button class="btn btn-modify">Home</button></li>
+          <li><button class="btn btn-modify">News</button></li>
+          <li><button class="btn btn-modify">Live Cameras</button></li>
+          <li><button class="btn btn-modify">Photos</button></li>
+          <li><button class="btn btn-modify">Contact</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+      <header class="p-5 col-sm-12">
+        <div class="search-container col-xl-10 m-auto my-5 d-flex p-2">
+          <input id="citySearch" class="form-control bg-transparent text-white border-0" type="text"
+            placeholder="Find your location...">
+          <button class="btn btn-info">Find</button>
+        </div>
+      
+        <div class="weather-display col-xl-10 m-auto">
+          <div class="container-fluid">
+            <!-- Today's weather -->
+            <div class="row">
+              <div class="today col-lg-4">
+                <div class="today-header p-3 d-flex justify-content-between align-items-center">
+                  <h4 id="todayName" class="m-0 d-inline-block"></h4>
+                  <span id="todayDate" class="m-0"></span>
+                </div>
+                <div class="today-body p-4 container text-center">
+                  <div class="row align-items-center">
+                    <h5 id="cityName" class="col-12 text-start"></h5>
+                    <span id="currentTemp" class="d-block col-xl-6"></span>
+                    <div class="img-container col-xl-5 m-auto">
+                      <img id="currentConditionIcon" class=" d-block m-auto" >
+                    </div>
+                    <span id="currentConditionText" class="col-12 d-block text-start local-color"><span>
+                  </div>
+                </div>
+                <div class="today-footer">
+                  <div class="container p-3">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <i class="fas fa-umbrella"></i>
+                        <span>20%</span>
+                      </div>
+                      <div class="col-sm-4">
+                        <i class="fas fa-wind"></i>
+                        <span>18km/h</span>
+                      </div>
+                      <div class="col-sm-4">
+                        <i class="far fa-compass"></i>
+                        <span>East</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Tomorrow's weather -->
+              <div class="tomorrow col-lg-4">
+                <div class="tomorrow-header p-3 text-center">
+                  <h4 id="tomorrowName" class="m-0"></h4>
+                </div>
+                <div class="tomorrow-body p-3 text-center">
+                  <div class="img-container w-25 m-auto my-4">
+                    <img id="tomorrowConditionIcon" class=" d-block w-50 m-auto">
+                  </div>
+                  <span id="tomorrowMaxtemp" class="d-block fs-3 fw-bold text-white"></span>
+                  <span id="tomorrowMintemp" class="d-block"></span>
+                  <span id="tomorrowConditionText" class="d-block local-color my-3"><span>
+                  </div>
+              </div>
+            <!-- After tomorrow's weather -->
+              <div class="after-tomorrow col-lg-4 ">
+                <div class="after-tomorrow-header p-3 text-center">
+                  <h4 id="afterTomorrowName" class="m-0"></h4>
+                </div>
+                <div class="after-tomorrow-body p-3 text-center">
+                  <div class="img-container w-25 m-auto my-4">
+                    <img id="afterTomorrowConditionIcon" class=" d-block w-50 m-auto">
+                  </div>
+                  <span id="afterTomorrowMaxtemp" class="d-block fs-3 fw-bold text-white"></span>
+                  <span id="afterTomorrowMintemp" class="d-block"></span>
+                  <span id="afterTomorrowConditionText" class="d-block local-color my-3"><span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </header>
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row w-75 m-auto">
+            <div class="search-container col-lg-7 my-5 d-flex p-2">
+              <input class="form-control bg-transparent text-white border-0" type="text"
+                placeholder="Enter your Email to subscribe...">
+              <button class="btn btn-info">Subscribe</button>
+            </div>
+            <div class="icons col-lg-2 offset-lg-2 my-5 d-flex justify-content-between align-items-center">
+              <span class="d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></span>
+              <span class="d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></span>
+              <span class="d-flex justify-content-center align-items-center"><i class="fab fa-google-plus-g"></i></span>
+            </div>
+            <p class="footer-caption col-lg-12 mb-5 mt-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    
+  <!-- <header class="p-5">
+    <div class="search-container w-75 m-auto my-5 d-flex p-2">
+      <input class="form-control bg-transparent text-white border-0" type="text"
+        placeholder="Find your location...">
+      <button class="btn btn-info">Find</button>
+    </div>
+    
+    <div class="weather-display w-100 m-auto">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="today col-lg-4">
+            <div class="today-header p-3 d-flex justify-content-between align-items-center">
+              <h4 class="m-0 d-inline-block">Wednesday</h4>
+              <span class="m-0">19January</span>
+            </div>
+            <div class="today-body p-4 container text-center">
+              <div class="row align-items-center">
+                <h5 id="cityName" class="col-12 text-start"></h5>
+                <span id="currentTemp" class="d-block col-xl-6"></span>
+                <div class="img-container col-xl-5 m-sm-auto">
+                  <img id="conditionIcon" class=" d-block m-sm-auto" >
+                </div>
+                <span id="conditionText" class="col-12 d-block text-start local-color"><span>
+              </div>
+            </div>
+            <div class="today-footer">
+              <div class="container p-3">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <i class="fas fa-umbrella"></i>
+                    <span>20%</span>
+                  </div>
+                  <div class="col-sm-4">
+                    <i class="fas fa-wind"></i>
+                    <span>18km/h</span>
+                  </div>
+                  <div class="col-sm-4">
+                    <i class="far fa-compass"></i>
+                    <span>East</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tomorrow col-lg-4">
+            <div class="tomorrow-header p-3 text-center">
+              <h4 class="m-0">Thursday</h4>
+            </div>
+            <div class="tomorrow-body p-3 text-center">
+              <div class="img-container w-25 m-auto my-4">
+                <img class=" d-block w-50 m-auto" src="images/icon-compass.png" alt="">
+              </div>
+              <span class="d-block fs-3 fw-bold text-white">17.3 C</span>
+              <span class="d-block">7.7 C</span>
+              <span class="d-block local-color my-3">Sunny<span>
+              </div>
+          </div>
+          <div class="after-tomorrow col-lg-4 ">
+            <div class="after-tomorrow-header p-3 text-center">
+              <h4 class="m-0">Friday</h4>
+            </div>
+            <div class="after-tomorrow-body p-3 text-center">
+              <div class="img-container w-25 m-auto my-4">
+                <img class=" d-block w-50 m-auto" src="images/icon-compass.png" alt="">
+              </div>
+              <span class="d-block fs-3 fw-bold text-white">17.3 C</span>
+              <span class="d-block">7.7 C</span>
+              <span class="d-block local-color my-3">Sunny<span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  
+  <footer>
+    <div class="container-fluid">
+      <div class="row w-75 m-auto">
+        <div class="search-container col-lg-7 my-5 d-flex p-2">
+          <input class="form-control bg-transparent text-white border-0" type="text"
+            placeholder="Enter your Email to subscribe...">
+          <button class="btn btn-info">Subscribe</button>
+        </div>
+        <div class="icons col-lg-2 offset-lg-2 my-5 d-flex justify-content-between align-items-center">
+          <span class="d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></span>
+          <span class="d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></span>
+          <span class="d-flex justify-content-center align-items-center"><i class="fab fa-google-plus-g"></i></span>
+        </div>
+        <p class="footer-caption col-lg-12 mb-5 mt-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </footer> -->
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/code.js"></script>
+</body>
+
+</html>
